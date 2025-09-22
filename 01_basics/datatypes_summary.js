@@ -20,14 +20,14 @@ const bigNumber = 23245585837384748n
 
 // Array, Objects, Functions
 
-const heros = ["shaktimaan","naagraj","doga"];
+const heros = ["shaktimaan", "naagraj", "doga"];
 
 let myObj = {
     name: "rohan",
     age: 22,
 }
 
-const myFunction = function(){
+const myFunction = function () {
     console.log("Hello World!");
 }
 
@@ -54,4 +54,17 @@ anothername = "chaiaurcode"
 
 console.log(myYoutubename);
 console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "devdas@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
