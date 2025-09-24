@@ -16,9 +16,24 @@ let myDate = new Date();
 let myCreatedDate = new Date("01-14-2025")
 // console.log(myCreatedDate.toLocaleString());
 
-let myTimeStanp = Date.now()
+let myTimeStamp = Date.now()
 
-console.log(myTimeStanp);
+// console.log(myTimeStamp);
+// console.log(myCreatedDate.getTime());
+// console.log(Math.floor(Date.now()/1000));
+
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getDay());
+
+// `${newDate.getDay()} and the time is`
+
+newDate.toLocaleString('default', {
+    weekday: "long",
+})
+
+
 
 
 
