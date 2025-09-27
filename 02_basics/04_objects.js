@@ -28,7 +28,7 @@ const obj4 = { 5: "a", 6: "b" }
 // const obj3 = Object.assign({},obj1,obj2) // given a target empty braces {} 
 
 const obj3 = { ...obj1, ...obj2, ...obj4 }
-console.log(obj3);
+// console.log(obj3);
 
 
 // how values come from database, it come in array of objs
@@ -50,10 +50,44 @@ const user = [
 
 
 user[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+// objects destructure
+
+const course = {
+    coursename: "JS in hindi",
+    price: 999,
+    courseInstructor: "hitesh"
+}
+
+
+// console.log(course.courseInstructor);
+
+const {courseInstructor: Instructor} = course
+
+// console.log(courseInstructor);
+console.log(Instructor);
+
+
+// JSON file
+
+//    object type JSON file
+// {
+//     "name": "rohan",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// Array type JSON file
+[
+    { },
+    { },
+    { }
+
+]
